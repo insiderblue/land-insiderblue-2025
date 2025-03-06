@@ -1,26 +1,135 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-nohemi: "Nohemi", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-dark: #020A16;
+  --color-light: #EDEFF2;
+  --color-accent: #2C77E4;
+  --color-dark-accent: #031B3D;
+  --color-gray: #DCE0E5;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-Thin-BF6438cc57e2011.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-ExtraLight-BF6438cc581502c.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-Light-BF6438cc5702321.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-Regular-BF6438cc579d934.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-Medium-BF6438cc57ddec4.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-SemiBold-BF6438cc57db2ff.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-Bold-BF6438cc577b524.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-ExtraBold-BF6438cc5761ae2.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nohemi";
+  src: url("/fonts/Nohemi-Black-BF6438cc565e67b.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nohemi);
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  min-height: 100dvh;
 }
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+}
+
+h6 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 5%;
+}
+
