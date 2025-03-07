@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { Section } from '@/components/Section';
 import { Container } from '@/components/Container';
 import { Divisor } from '@/components/Divisor';

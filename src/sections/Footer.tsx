@@ -3,7 +3,7 @@ import { Container } from '@/components/Container';
 
 export default function Footer() {
 
-    let currentYear = new Date().getFullYear();
+    const currentYear = new Date().getFullYear();
 
     return (
         <footer className="bg-accent">

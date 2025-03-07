@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 import { Section } from '@/components/Section';
@@ -9,14 +10,14 @@ export default function Hero() {
         <Section id="hero" variant="odd" className="bg-[url('/img/hero.png')] bg-cover bg-center h-screen w-full">
             <Container className="flex flex-col items-center py-32">
                 <div className="flex justify-between items-center w-full">
-                <a href="/" target="_self" aria-label="Insiderblue">
+                <Link href="/" target="_self" aria-label="Insiderblue">
                     <Image
                     src="/img/logo.png"
                     alt="Logo"
                     width={207}
                     height={36}
                     />
-                </a>
+                </Link>
                 <nav>
                     <ul>
                     <li>

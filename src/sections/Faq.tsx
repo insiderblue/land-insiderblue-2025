@@ -12,12 +12,12 @@ import { Badge } from '@/components/Badge';
 
 export default function Faq() {
 
-    const [openIndex, setOpenIndex] = useState(null);
-
-    const toggleItem = (index:any) => {
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+    
+    const toggleItem = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
     };
-
+    
     const faqs = [
         {
             question: "Em quanto tempo meu site fica pronto?",
