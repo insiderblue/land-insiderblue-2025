@@ -17,7 +17,7 @@ export default function Hero() {
             <div className="w-[491px] max-w-full"> 
               <h1 className="bg-gradient-to-r from-accent to-dark-accent bg-clip-text text-transparent uppercase">Marcas que confiam no nosso trabalho e estão usando sites Insiderblue</h1>
             </div>
-            <div className="flex flex-wrap gap-4 flex-1">
+            <div className="flex flex-wrap items-center justify-center gap-4 flex-1">
               <Image
                 src="/img/logo-1.png"
                 alt="Logo"

@@ -7,7 +7,7 @@ export default function Footer() {
 
     return (
         <footer className="bg-accent">
-            <Container className="flex justify-between py-4">
+            <Container className="flex flex-col items-center justify-center gap-5 text-center xl:flex-row xl:justify-between py-4">
                 <span>© {currentYear} Insiderblue - All rights reserved</span>
                 <span>FEITO COM ❤️ POR INSIDERBLUE. & <a href="https://lucidesigner.com/" target="_blank">LUCIANA D. DESIGNER</a></span>
             </Container>
