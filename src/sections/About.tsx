@@ -19,6 +19,8 @@ export default function About() {
         href: '#prices'
     };
     
+    const image = '/img/linhasbgtec.png';
+
     return (
         <Section variant="odd" id="about">
             <Divisor variant={2}/>
@@ -33,8 +35,8 @@ export default function About() {
                 </div>
             </Container>
             <Image
-                src="/img/linhasbgtec.png"
-                alt="Fundo"
+                src={image}
+                alt=""
                 width={1604}
                 height={473}
                 className="absolute top-[50%] right-[-344px] translate-y-[-50%] h-[473px]  mix-blend-color-dodge select-none pointer-events-none"
