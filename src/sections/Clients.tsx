@@ -1,3 +1,7 @@
+'use client';
+
+import { useState } from "react";
+
 import Image from 'next/image';
 
 import { Section } from '@/components/Section';
@@ -6,6 +10,58 @@ import { Divisor } from '@/components/Divisor';
 import { Badge } from '@/components/Badge';
 
 export default function Hero() {
+
+    const clients = [
+      {
+        name: 'Sagrado Design',
+        logo: '/img/logo-1.png',
+      },
+      {
+        name: 'Alisson Jordão',
+        logo: '/img/logo-2.png',
+      },
+      {
+        name: 'Dra. Evelyne Borges de Mattos',
+        logo: '/img/logo-3.png',
+      },
+      {
+        name: 'Fadiva',
+        logo: '/img/logo-4.png',
+      },
+      {
+        name: 'Cardiocenter',
+        logo: '/img/logo-5.png',
+      },
+      {
+        name: 'Ferr English',
+        logo: '/img/logo-6.png',
+      },
+      {
+        name: 'Rava Imóveis',
+        logo: '/img/logo-7.png',
+      },
+      {
+        name: 'RAD Advogados',
+        logo: '/img/logo-8.png',
+      },
+      {
+        name: 'Ferreira Júnior',
+        logo: '/img/logo-9.png',
+      },
+      {
+        name: 'GSL Advogados',
+        logo: '/img/logo-10.png',
+      },
+      {
+        name: 'MZ Group',
+        logo: '/img/logo-11.png',
+      },
+      {
+        name: 'Viana & Arantes Advogados',
+        logo: '/img/logo-12.png',
+      }
+    ];
+
     return (
       <Section id="clients" variant="odd">
           <Divisor variant={2}/>
@@ -18,78 +74,15 @@ export default function Hero() {
                 <h1 className="bg-gradient-to-r from-accent to-dark-accent bg-clip-text text-transparent uppercase">Marcas que confiam no nosso trabalho e estão usando sites Insiderblue</h1>
               </div>
               <div className="flex flex-wrap items-center justify-center gap-4 flex-1">
-                <Image
-                  src="/img/logo-1.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-2.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-3.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-4.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-5.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-6.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-7.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-8.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-9.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-10.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-11.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
-                <Image
-                  src="/img/logo-12.png"
-                  alt="Logo"
-                  width={139}
-                  height={139}
-                />
+                {clients.map((client,index) => (
+                    <Image
+                      key={index}
+                      src={client.logo}
+                      alt={client.name}
+                      width={139}
+                      height={139}
+                    />
+                ))}
               </div>
             </div>
           </Container>
