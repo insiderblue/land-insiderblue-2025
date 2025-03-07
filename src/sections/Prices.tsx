@@ -56,6 +56,8 @@ export default function Prices() {
         },
     ];
 
+    const disclaimer = '* O valor referente ao desenvolvimento pode ser pago em duas parcelas, sendo a primeira anteriormente ao inicio do projeto e a segunda durante a entrega.';
+
     return (
         <Section id="prices" variant="even">
             <Container className="flex flex-col items-center py-28 pb-34">
@@ -90,9 +92,7 @@ export default function Prices() {
                         </Card>
                     ))}
                 </div>
-                <div className="mt-14 text-center max-w-[600px]">
-                    * O valor referente ao desenvolvimento pode ser pago em duas parcelas, sendo a primeira anteriormente ao inicio do projeto e a segunda durante a entrega. 
-                </div>
+                <div className="mt-14 text-center max-w-[600px]">{disclaimer}</div>
             </Container>
         </Section>
     )
