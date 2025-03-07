@@ -9,7 +9,7 @@ export default function Footer() {
         <footer className="bg-accent">
             <Container className="flex justify-between py-4">
                 <span>© {currentYear} Insiderblue - All rights reserved</span>
-                <span>FEITO COM ❤ POR INSIDERBLUE. & <a href="https://lucidesigner.com/" target="_blank">LUCIANA D. DESIGNER</a></span>
+                <span>FEITO COM ❤️ POR INSIDERBLUE. & <a href="https://lucidesigner.com/" target="_blank">LUCIANA D. DESIGNER</a></span>
             </Container>
         </footer>
     )
