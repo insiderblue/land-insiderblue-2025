@@ -156,7 +156,7 @@ export default function Prices() {
                         <Button href="https://web.whatsapp.com/send?phone=5535984365367&text=Olá. Gostaria de um site Master!" target="_blank">Quero um site Master</Button>
                     </Card>
                 </div>
-                <div className="mt-2 text-center">
+                <div className="mt-14 text-center">
                     * O valor referente ao desenvolvimento pode ser pago em duas parcelas, sendo a primeira anteriormente ao inicio do projeto e a segunda durante a entrega.
                 </div>
             </Container>
