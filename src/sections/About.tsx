@@ -20,7 +20,7 @@ export default function About() {
                         <p className="mb-6">Somos uma agência <strong>especializada em criar sites para pequenos e médios negócios</strong>. Acreditamos que um site bem-feito é essencial para fortalecer a presença online e atrair novos clientes.</p>
                         <p>Nosso compromisso é desenvolver sites que reflitam a essência da sua marca, com um design atrativo e funcional, ajudando o seu negócio a crescer e se destacar no mercado.</p>
                     </div>
-                    <Button href="#nossos-planos">Ver planos</Button>
+                    <Button href="#prices">Ver planos</Button>
                 </div>
             </Container>
             <Image
