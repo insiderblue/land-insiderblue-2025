@@ -19,7 +19,7 @@ export default function Hero() {
                     />
                 </Link>
                 <nav>
-                    <ul>
+                    <ul className="flex gap-8 items-center">
                         <li>
                             <a className="uppercase transition-all ease-in-out duration-300 hover:text-accent" href="#differentials">
                                 Diferenciais
