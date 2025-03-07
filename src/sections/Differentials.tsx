@@ -8,6 +8,8 @@ import { Badge } from '@/components/Badge';
 
 export default function Differentials() {
 
+    const title = 'Estrutura Completa';
+
     const cards = [
         {
             icon: '/img/icon-1.png',
@@ -31,7 +33,7 @@ export default function Differentials() {
             <Divisor variant={1}/>
             <Container className="flex flex-col items-center pt-28 pb-42">
                 <div className="mb-14">
-                <Badge>Estrutura Completa</Badge>
+                <Badge>{title}</Badge>
                 </div>
                 <div className="flex flex-col xl:flex-row gap-5">
                     {cards.map((card,index) => (

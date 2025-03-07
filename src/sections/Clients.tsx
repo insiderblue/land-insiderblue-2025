@@ -7,6 +7,10 @@ import { Badge } from '@/components/Badge';
 
 export default function Hero() {
 
+    const title = 'Nossos clientes';
+
+    const text = 'Marcas que confiam no nosso trabalho e estão usando sites Insiderblue';
+
     const clients = [
       {
         name: 'Sagrado Design',
@@ -63,11 +67,11 @@ export default function Hero() {
           <Divisor variant={2}/>
           <Container className="flex flex-col items-center pt-28 pb-42">
             <div className="mb-14">
-              <Badge>Nossos clientes</Badge>
+              <Badge>{title}</Badge>
             </div>
             <div className="w-full flex flex-col xl:flex-row gap-8 items-center">
               <div className="w-[491px] max-w-full"> 
-                <h1 className="bg-gradient-to-r from-accent to-dark-accent bg-clip-text text-transparent uppercase">Marcas que confiam no nosso trabalho e estão usando sites Insiderblue</h1>
+                <h1 className="bg-gradient-to-r from-accent to-dark-accent bg-clip-text text-transparent uppercase">{text}</h1>
               </div>
               <div className="flex flex-wrap items-center justify-center gap-4 flex-1">
                 {clients.map((client,index) => (

@@ -17,6 +17,8 @@ export default function Faq() {
     const toggleItem = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
     };
+
+    const title = 'Dúvidas frequentes';
     
     const faqs = [
         {
@@ -51,37 +53,37 @@ export default function Faq() {
             <Divisor variant={1}/>
             <Container className="flex flex-col items-center py-28 pb-18">
                 <div className="mb-14">
-                    <Badge>Dúvidas frequentes</Badge>
+                    <Badge>{title}</Badge>
                 </div>
                 <ul className="text-left flex flex-col gap-5 mb-10 w-full select-none">
                     {faqs.map((faq, index) => (
-                    <li
-                        key={index}
-                        onClick={() => toggleItem(index)}
-                        className="cursor-pointer"
-                    >
-                        <span
-                        className="flex items-center gap-3 bg-gradient-to-r from-dark to-dark-accent 
-                        bg-right py-2 px-10 max-w-max rounded-full font-semibold"
+                        <li
+                            key={index}
+                            onClick={() => toggleItem(index)}
+                            className="cursor-pointer"
                         >
-                            <FontAwesomeIcon
-                                icon={faAngleRight}
-                                className={`text-accent w-3 transition-transform duration-300 ${
-                                openIndex === index ? "rotate-90" : ""
-                                }`}
-                            />
-                            <p>{faq.question}</p>
-                        </span>
-                        <ul
-                            className={`py-6 border-b-[1px] border-accent transition-all duration-300 ${
-                                openIndex === index ? "block" : "hidden"
-                            }`}
+                            <span
+                            className="flex items-center gap-3 bg-gradient-to-r from-dark to-dark-accent 
+                            bg-right py-2 px-10 max-w-max rounded-full font-semibold"
                             >
-                            <li>
-                                <p>{faq.answer}</p>
-                            </li>
-                        </ul>
-                    </li>
+                                <FontAwesomeIcon
+                                    icon={faAngleRight}
+                                    className={`text-accent w-3 transition-transform duration-300 ${
+                                    openIndex === index ? "rotate-90" : ""
+                                    }`}
+                                />
+                                <p>{faq.question}</p>
+                            </span>
+                            <ul
+                                className={`py-6 border-b-[1px] border-accent transition-all duration-300 ${
+                                    openIndex === index ? "block" : "hidden"
+                                }`}
+                                >
+                                <li>
+                                    <p>{faq.answer}</p>
+                                </li>
+                            </ul>
+                        </li>
                     ))}
                 </ul>
             </Container>
