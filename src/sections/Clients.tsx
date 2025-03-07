@@ -78,6 +78,18 @@ export default function Hero() {
                   width={139}
                   height={139}
                 />
+                <Image
+                  src="/img/logo-11.png"
+                  alt="Logo"
+                  width={139}
+                  height={139}
+                />
+                <Image
+                  src="/img/logo-12.png"
+                  alt="Logo"
+                  width={139}
+                  height={139}
+                />
               </div>
             </div>
           </Container>
