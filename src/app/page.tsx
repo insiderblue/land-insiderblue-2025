@@ -1,6 +1,6 @@
 
 import Hero from '@/sections/Hero';
-import Structure from '@/sections/Structure';
+import Differentials from '@/sections/Differentials';
 import About from '@/sections/About';
 import Prices from '@/sections/Prices';
 import Clients from '@/sections/Clients';
@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Structure />
+      <Differentials />
       <About />
       <Prices />
       <Clients />

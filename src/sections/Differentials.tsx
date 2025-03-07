@@ -6,9 +6,9 @@ import { Divisor } from '@/components/Divisor';
 import { Card } from '@/components/Card';
 import { Badge } from '@/components/Badge';
 
-export default function Structure() {
+export default function Differentials() {
     return (
-        <Section id="structure" variant="even">
+        <Section id="differentials" variant="even">
             <Divisor variant={1}/>
             <Container className="flex flex-col items-center pt-28 pb-42">
                 <div className="mb-14">

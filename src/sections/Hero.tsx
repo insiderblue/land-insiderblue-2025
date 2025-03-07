@@ -20,11 +20,31 @@ export default function Hero() {
                 </Link>
                 <nav>
                     <ul>
-                    <li>
-                        <a className="uppercase transition-all ease-in-out duration-300 hover:text-accent" href="#prices" aria-label="Vai para a seção contendo os nossos planos">
-                        Nossos planos
-                        </a>
-                    </li>
+                        <li>
+                            <a className="uppercase transition-all ease-in-out duration-300 hover:text-accent" href="#differentials">
+                                Diferenciais
+                            </a>
+                        </li>
+                        <li>
+                            <a className="uppercase transition-all ease-in-out duration-300 hover:text-accent" href="#about">
+                                Sobre nós
+                            </a>
+                        </li>
+                        <li>
+                            <a className="uppercase transition-all ease-in-out duration-300 hover:text-accent" href="#prices">
+                                Preços
+                            </a>
+                        </li>
+                        <li>
+                            <a className="uppercase transition-all ease-in-out duration-300 hover:text-accent" href="#clients">
+                                Clientes
+                            </a>
+                        </li>
+                        <li>
+                            <a className="uppercase transition-all ease-in-out duration-300 hover:text-accent" href="#faq">
+                                Dúvidas frequentes
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 </div>
