@@ -8,7 +8,7 @@
   --color-dark: #020A16;
   --color-light: #EDEFF2;
   --color-accent: #2C77E4;
-  --color-dark-accent: #031B3D;
+  --color-dark-accent: #031B3D; 
   --color-gray: #DCE0E5;
 }
 
@@ -75,6 +75,10 @@
   font-style: normal;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-nohemi);
   background-color: var(--color-dark);
@@ -85,7 +89,7 @@ body {
 h1 {
   font-weight: 700;
   font-size: 48px;
-  line-height: 100%;
+  line-height: 120%;
   letter-spacing: 0%;
   text-transform: uppercase;
 }
@@ -93,21 +97,21 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 40px;
-  line-height: 100%;
+  line-height: 120%;
   letter-spacing: 0%;
 }
 
 h3 {
   font-weight: 500;
   font-size: 36px;
-  line-height: 100%;
+  line-height: 120%;
   letter-spacing: 0%;
 }
 
 h4 {
   font-weight: 500;
   font-size: 32px;
-  line-height: 100%;
+  line-height: 120%;
   letter-spacing: 0%;
   text-transform: uppercase;
 }
@@ -115,21 +119,20 @@ h4 {
 h5 {
   font-weight: 400;
   font-size: 24px;
-  line-height: 110.00000000000001%;
+  line-height: 140%;
   letter-spacing: 0%;
 }
 
 h6 {
   font-weight: 500;
   font-size: 20px;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0%;
 }
 
 p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 160%;
   letter-spacing: 5%;
 }
-
