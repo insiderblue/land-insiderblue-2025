@@ -13,7 +13,7 @@ export default function Hero() {
             <div className="mb-14">
               <Badge>Nossos clientes</Badge>
             </div>
-            <div className="w-full flex flex-col xl:flex-row gap-8">
+            <div className="w-full flex flex-col xl:flex-row gap-8 items-center">
               <div className="w-[491px] max-w-full"> 
                 <h1 className="bg-gradient-to-r from-accent to-dark-accent bg-clip-text text-transparent uppercase">Marcas que confiam no nosso trabalho e estão usando sites Insiderblue</h1>
               </div>
