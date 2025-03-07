@@ -7,7 +7,7 @@ import { Button } from '@/components/Button';
 
 export default function Hero() {
     return (
-        <Section id="hero" variant="odd" className="bg-[url('/img/hero.png')] bg-cover bg-center h-screen w-full">
+        <Section id="hero" variant="odd" className="bg-[url('/img/hero.png')] bg-cover bg-center xl:h-screen w-full">
             <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
             <Container className="flex flex-col items-center py-32 z-10 relative">
                 <div className="flex justify-between items-center xl:w-full mb-24">
