@@ -12,7 +12,7 @@ import { Button } from '@/components/Button';
 export default function Prices() {
     return (
         <Section id="prices" variant="even">
-            <Container className="flex flex-col items-center py-28">
+            <Container className="flex flex-col items-center py-28 pb-34">
                 <div className="mb-14">
                 <Badge>Nossos planos</Badge>
                 </div>
@@ -157,7 +157,7 @@ export default function Prices() {
                     </Card>
                 </div>
                 <div className="mt-14 text-center">
-                    * O valor referente ao desenvolvimento pode ser pago em duas parcelas, sendo a primeira anteriormente ao inicio do projeto e a segunda durante a entrega.
+                    * O valor referente ao desenvolvimento pode ser pago em duas parcelas, sendo a primeira anteriormente ao inicio do projeto e a segunda durante a entrega. 
                 </div>
             </Container>
         </Section>
