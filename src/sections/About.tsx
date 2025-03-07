@@ -15,12 +15,12 @@ export default function About() {
                 <Badge>Conheça nossa empresa</Badge>
                 </div>
                 <div className="w-full">
-                <h1 className="bg-gradient-to-r from-accent to-dark-accent bg-clip-text text-transparent uppercase max-w-[630px] mb-3">Especialistas Em Desenvolvento</h1>
-                <div className="max-w-[630px] mb-8">
-                    <p>Somos uma agência <strong>especializada em criar sites para pequenos e médios negócios</strong>. Acreditamos que um site bem-feito é essencial para fortalecer a presença online e atrair novos clientes.</p>
-                    <p>Nosso compromisso é desenvolver sites que reflitam a essência da sua marca, com um design atrativo e funcional, ajudando o seu negócio a crescer e se destacar no mercado.</p>
-                </div>
-                <Button href="#nossos-planos">Ver planos</Button>
+                    <h1 className="bg-gradient-to-r from-accent to-dark-accent bg-clip-text text-transparent uppercase max-w-[630px] mb-6">Especialistas Em Desenvolvento</h1>
+                    <div className="max-w-[630px] mb-8">
+                        <p className="mb-6">Somos uma agência <strong>especializada em criar sites para pequenos e médios negócios</strong>. Acreditamos que um site bem-feito é essencial para fortalecer a presença online e atrair novos clientes.</p>
+                        <p>Nosso compromisso é desenvolver sites que reflitam a essência da sua marca, com um design atrativo e funcional, ajudando o seu negócio a crescer e se destacar no mercado.</p>
+                    </div>
+                    <Button href="#nossos-planos">Ver planos</Button>
                 </div>
             </Container>
             <Image
