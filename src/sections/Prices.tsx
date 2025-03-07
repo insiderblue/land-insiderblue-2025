@@ -61,7 +61,7 @@ export default function Prices() {
                     <h5 className="mb-2">690,00<span className="text-accent">*</span></h5>
                     <p>+ 54,90 mensal</p>
                     </div>
-                    <Button href="/contratar">Quero um site Start</Button>
+                    <Button href="https://web.whatsapp.com/send?phone=5535984442779&text=Olá. Gostaria de um site Start!" target="_blank">Quero um site Start</Button>
                 </Card>
                 <Card>
                     <Image
@@ -107,7 +107,7 @@ export default function Prices() {
                     <h5 className="mb-2">890,00<span className="text-accent">*</span></h5>
                     <p>+ 64,90 mensal</p>
                     </div>
-                    <Button href="/contratar">Quero um site Plus</Button>
+                    <Button href="https://web.whatsapp.com/send?phone=5535984442779&text=Olá. Gostaria de um site Plus!" target="_blank">Quero um site Plus</Button>
                 </Card>
                 <Card>
                     <Image
@@ -153,7 +153,7 @@ export default function Prices() {
                     <h5 className="mb-2">1490,00<span className="text-accent">*</span></h5>
                     <p>+ 74,90 mensal</p>
                     </div>
-                    <Button href="/contratar">Quero um site Master</Button>
+                    <Button href="https://web.whatsapp.com/send?phone=5535984442779&text=Olá. Gostaria de um site Master!" target="_blank">Quero um site Master</Button>
                 </Card>
                 </div>
             </Container>
