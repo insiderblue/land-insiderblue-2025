@@ -75,7 +75,7 @@
   font-style: normal;
 }
 
-html {
+html,body {
   overflow-x: hidden;
 }
 
