@@ -61,17 +61,15 @@ interface Menu {
 }
 
 const menuQuery = `{
-    menu {
+    allMenus {
         title,
         href
     }
 }`;
 
-const menu = ((await performRequest(menuQuery)) as { menu: Menu }).menu;
+const menu = ((await performRequest(menuQuery)) as { menu: Menu }).allMenus;
 
 export default async function Hero() {
-
-    console.log(menu);
 
     return (
         <Section id="hero" variant="odd" className="xl:h-screen w-full">
