@@ -1,5 +1,6 @@
 #!/bin/bash
 
-git pull
+git pull --rebase
+npm ci
 npm run build
-npm start
+pm2 restart insiderblue || pm2 start npm --name "insiderblue" -- start
