@@ -77,7 +77,7 @@ export default async function Hero() {
             <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
             <Container className="flex flex-col items-center py-32 z-10 relative">
                 <div className="flex justify-between items-center xl:w-full mb-24">
-                    <Link href="/" target="_self" aria-label="Insiderblue">
+                    <Link href="/" target="_self" aria-label="Insiderblue"> 
                         <Image
                         src={layout.logo.url}
                         alt={layout.title}
