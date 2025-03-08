@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "npm-run-all --parallel build:css build:js",
-    "build:css": "sass src/styles.scss dist/styles.css",
-    "build:js": "webpack --config webpack.config.js"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
