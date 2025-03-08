@@ -7,6 +7,28 @@ import { Section } from '@/components/Section';
 import { Container } from '@/components/Container';
 import { Button } from '@/components/Button';
 
+// Get content from 'layout'
+
+interface Layout {
+    title: string,
+    logo: {
+        url: string
+    }
+}
+
+const layoutQuery = `{
+    layout {
+        title,
+        logo {
+            url
+        } 
+    }
+}`;
+
+const layout = ((await performRequest(layoutQuery)) as { layout: Layout }).layout;
+
+// Get content from 'heroSection'
+
 interface HeroSection {
     title: string,
     description: string,
@@ -17,7 +39,7 @@ interface HeroSection {
     }
 }
 
-const SECTION_CONTENT_QUERY = `{
+const heroSectionQuery = `{
   heroSection {
     title,
     description,
@@ -29,48 +51,38 @@ const SECTION_CONTENT_QUERY = `{
   }
 }`;
 
+const hero = ((await performRequest(heroSectionQuery)) as { heroSection: HeroSection }).heroSection;
+
+// Get content from 'menu'
+
+interface Menu {
+    title: string,
+    href: string,
+}
+
+const menuQuery = `{
+    menu {
+        title,
+        href
+    }
+}`;
+
+const menu = ((await performRequest(menuQuery)) as { menu: Menu }).menu;
+
 export default async function Hero() {
 
-    const content = (await performRequest(SECTION_CONTENT_QUERY)) as { heroSection: HeroSection };
-
-    const logo = {
-        src: '/img/logo.png',
-        alt: 'Insiderblue',
-    };
-
-    const menu = [
-        {
-            title: 'Diferenciais',
-            href: '#differentials'
-        },
-        {
-            title: 'Sobre nós',
-            href: '#about'
-        },
-        {
-            title: 'Preços',
-            href: '#prices'
-        },
-        {
-            title: 'Clientes',
-            href: '#clients'
-        },
-        {
-            title: 'Dúvidas frequentes',
-            href: '#faq'
-        }
-    ];
+    console.log(menu);
 
     return (
         <Section id="hero" variant="odd" className="xl:h-screen w-full">
-            <video src={content.heroSection.video.url} autoPlay playsInline muted loop className="object-cover w-full h-full absolute"></video>
+            <video src={hero.video.url} autoPlay playsInline muted loop className="object-cover w-full h-full absolute"></video>
             <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
             <Container className="flex flex-col items-center py-32 z-10 relative">
                 <div className="flex justify-between items-center xl:w-full mb-24">
                     <Link href="/" target="_self" aria-label="Insiderblue">
                         <Image
-                        src={logo.src}
-                        alt={logo.alt}
+                        src={layout.logo.url}
+                        alt={layout.title}
                         width={207}
                         height={36}
                         />
@@ -88,9 +100,9 @@ export default async function Hero() {
                     </nav>
                     </div>
                     <div className="flex-1 flex flex-col items-center justify-center text-center">
-                    <h1 className="mb-6 max-w-4xl mx-auto">{content.heroSection.title}</h1>
-                    <h6 className="mb-10 max-w-3xl mx-auto">{content.heroSection.description}</h6>
-                    <Button href={content.heroSection.buttonLink}>{content.heroSection.buttonTitle}</Button>
+                    <h1 className="mb-6 max-w-4xl mx-auto">{hero.title}</h1>
+                    <h6 className="mb-10 max-w-3xl mx-auto">{hero.description}</h6>
+                    <Button href={hero.buttonLink}>{hero.buttonTitle}</Button>
                 </div>
             </Container>
         </Section>
