@@ -63,7 +63,8 @@ interface Menu {
 const menuQuery = `{
     allMenus(orderBy: order_ASC) {
         title,
-        href
+        href,
+        order
     }
 }`;
 
