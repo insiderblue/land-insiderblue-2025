@@ -61,7 +61,7 @@ interface Menu {
 }
 
 const menuQuery = `{
-    allMenus {
+    allMenus(orderBy: order_ASC) {
         title,
         href
     }
