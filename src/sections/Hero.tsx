@@ -37,7 +37,7 @@ export default function Hero() {
 
     const video = '/videos/hero.mp4';
 
-    const title = 'Dê ao seu negócio a presença online que ele merece !!! x x x u';
+    const title = 'Dê ao seu negócio a presença online que ele merece !!! x x x x x';
 
     const description = 'Transforme visitantes em clientes com um site profissional, moderno e totalmente pronto para publicar. Escolha seu modelo e comece agora!';
 
