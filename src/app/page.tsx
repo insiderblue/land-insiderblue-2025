@@ -10,16 +10,18 @@ import Footer from '@/sections/Footer';
 
 export default function Home() {
 
-  return (
-    <>
-      <Hero />
-      <Differentials />
-      <About />
-      <Prices />
-      <Clients />
-      <Faq />
-      <Cta />
-      <Footer />
-    </>
-  );
+  throw new Error("Erro 500 simulado");
+  
+  // return (
+  //   <>
+  //     <Hero />
+  //     <Differentials />
+  //     <About />
+  //     <Prices />
+  //     <Clients />
+  //     <Faq />
+  //     <Cta />
+  //     <Footer />
+  //   </>
+  // );
 }
