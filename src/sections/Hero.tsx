@@ -1,11 +1,37 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { performRequest } from '@/lib/datocms';
+
 import { Section } from '@/components/Section';
 import { Container } from '@/components/Container';
 import { Button } from '@/components/Button';
 
-export default function Hero() {
+interface HeroSection {
+    title: string,
+    description: string,
+    buttonLink: string,
+    buttonTitle: string,
+    video: {
+        url: string
+    }
+}
+
+const SECTION_CONTENT_QUERY = `{
+  heroSection {
+    title,
+    description,
+    buttonLink,
+    buttonTitle,
+    video {
+      url
+    } 
+  }
+}`;
+
+export default async function Hero() {
+
+    const content = (await performRequest(SECTION_CONTENT_QUERY)) as { heroSection: HeroSection };
 
     const logo = {
         src: '/img/logo.png',
@@ -35,20 +61,9 @@ export default function Hero() {
         }
     ];
 
-    const video = '/videos/hero.mp4';
-
-    const title = 'Dê ao seu negócio a presença online que ele merece';
-
-    const description = 'Transforme visitantes em clientes com um site profissional, moderno e totalmente pronto para publicar. Escolha seu modelo e comece agora!';
-
-    const button = {
-        title: 'Ver planos',
-        href: '#prices'
-    };
-
     return (
         <Section id="hero" variant="odd" className="xl:h-screen w-full">
-            <video src={video} autoPlay playsInline muted loop className="object-cover w-full h-full absolute"></video>
+            <video src={content.heroSection.video.url} autoPlay playsInline muted loop className="object-cover w-full h-full absolute"></video>
             <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
             <Container className="flex flex-col items-center py-32 z-10 relative">
                 <div className="flex justify-between items-center xl:w-full mb-24">
@@ -73,9 +88,9 @@ export default function Hero() {
                     </nav>
                     </div>
                     <div className="flex-1 flex flex-col items-center justify-center text-center">
-                    <h1 className="mb-6 max-w-4xl mx-auto">{title}</h1>
-                    <h6 className="mb-10 max-w-3xl mx-auto">{description}</h6>
-                    <Button href={button.href}>{button.title}</Button>
+                    <h1 className="mb-6 max-w-4xl mx-auto">{content.heroSection.title}</h1>
+                    <h6 className="mb-10 max-w-3xl mx-auto">{content.heroSection.description}</h6>
+                    <Button href={content.heroSection.buttonLink}>{content.heroSection.buttonTitle}</Button>
                 </div>
             </Container>
         </Section>
