@@ -53,7 +53,7 @@ const heroSectionQuery = `{
 
 const hero = ((await performRequest(heroSectionQuery)) as { heroSection: HeroSection }).heroSection;
 
-// Get content from 'menu'
+// Get content from 'allMenus'
 
 interface Menu {
     title: string,
@@ -67,7 +67,7 @@ const menuQuery = `{
     }
 }`;
 
-const menu = ((await performRequest(menuQuery)) as { menu: Menu }).allMenus;
+const menu = ((await performRequest(menuQuery)) as { allMenus: Menu[] }).allMenus;
 
 export default async function Hero() {
 
