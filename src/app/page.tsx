@@ -9,8 +9,6 @@ import Cta from '@/sections/Cta';
 import Footer from '@/sections/Footer';
 
 export default function Home() {
-
-  throw new Error("Erro 500 simulado");
   
   return (
     <>
