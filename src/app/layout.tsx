@@ -11,13 +11,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  if (typeof window === "undefined") {
-    return null; 
-  }
-
-  throw new Error("Erro 500 simulado no layout");
-
   return (
     <html lang="pt-BR">
       <body>
