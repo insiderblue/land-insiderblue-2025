@@ -12,8 +12,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  throw new Error("Erro 500 simulado");
-
   return (
     <html lang="pt-BR">
       <body>
