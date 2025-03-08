@@ -12,16 +12,16 @@ export default function Home() {
 
   throw new Error("Erro 500 simulado");
   
-  // return (
-  //   <>
-  //     <Hero />
-  //     <Differentials />
-  //     <About />
-  //     <Prices />
-  //     <Clients />
-  //     <Faq />
-  //     <Cta />
-  //     <Footer />
-  //   </>
-  // );
+  return (
+    <>
+      <Hero />
+      <Differentials />
+      <About />
+      <Prices />
+      <Clients />
+      <Faq />
+      <Cta />
+      <Footer />
+    </>
+  );
 }
