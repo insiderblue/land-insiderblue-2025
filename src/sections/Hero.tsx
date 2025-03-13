@@ -95,7 +95,7 @@ export default async function Hero() {
                                     </a>  
                                 </li>   
                             ))}  
-                        </ul>   
+                        </ul>    
                     </nav>      
                     </div>   
                     <div className="flex-1 flex flex-col items-center justify-center text-center">
