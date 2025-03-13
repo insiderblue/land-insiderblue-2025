@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   swcMinify: true,
   images: {
     domains: ['www.datocms-assets.com'],
+    minimumCacheTTL: 60
   },
 };
 
