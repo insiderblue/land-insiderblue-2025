@@ -84,7 +84,7 @@ export default async function Hero() {
                         alt={layout.title}
                         width={207}
                         height={36}
-                        />
+                        /> 
                     </Link>
                     <nav className="hidden xl:block">
                         <ul className="flex gap-8 items-center">
