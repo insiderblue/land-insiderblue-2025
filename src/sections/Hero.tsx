@@ -105,5 +105,5 @@ export default async function Hero() {
                 </div>
             </Container> 
         </Section>
-    )  
+    )   
 } 
