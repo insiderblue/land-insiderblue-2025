@@ -92,7 +92,7 @@ export default async function Hero() {
                                 <li key={index}>
                                     <a className="uppercase transition-all ease-in-out duration-300 hover:text-accent" href={item.href}>
                                         {item.title}
-                                    </a>  
+                                    </a>   
                                 </li>   
                             ))}  
                         </ul>    
