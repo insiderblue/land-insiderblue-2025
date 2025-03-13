@@ -88,7 +88,7 @@ export default async function Hero() {
                     </Link> 
                     <nav className="hidden xl:block">
                         <ul className="flex gap-8 items-center">
-                            {menu.map((item,index) => (
+                            {menu.map((item,index) => ( 
                                 <li key={index}>
                                     <a className="uppercase transition-all ease-in-out duration-300 hover:text-accent" href={item.href}>
                                         {item.title}
