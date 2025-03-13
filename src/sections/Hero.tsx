@@ -70,7 +70,7 @@ const menuQuery = `{
 
 const menu = ((await performRequest(menuQuery)) as { allMenus: Menu[] }).allMenus;
 
-export default async function Hero() {
+export default async function Hero() { 
  
     return ( 
         <Section id="hero" variant="odd" className="xl:h-screen w-full">
