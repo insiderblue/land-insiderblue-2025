@@ -85,7 +85,7 @@ export default async function Hero() {
                         width={207}
                         height={36}
                         /> 
-                    </Link>
+                    </Link> 
                     <nav className="hidden xl:block">
                         <ul className="flex gap-8 items-center">
                             {menu.map((item,index) => (
