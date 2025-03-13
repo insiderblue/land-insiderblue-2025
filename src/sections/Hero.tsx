@@ -94,7 +94,7 @@ export default async function Hero() {
                                         {item.title}
                                     </a> 
                                 </li> 
-                            ))}
+                            ))} 
                         </ul> 
                     </nav> 
                     </div>  
