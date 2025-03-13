@@ -72,7 +72,7 @@ const menu = ((await performRequest(menuQuery)) as { allMenus: Menu[] }).allMenu
 
 export default async function Hero() {
  
-    return (
+    return ( 
         <Section id="hero" variant="odd" className="xl:h-screen w-full">
             <video src={hero.video.url} autoPlay playsInline muted loop className="object-cover w-full h-full absolute"></video>
             <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
