@@ -102,7 +102,7 @@ export default async function Hero() {
                     <h1 className="mb-6 max-w-4xl mx-auto">{hero.title}</h1>
                     <h6 className="mb-10 max-w-3xl mx-auto">{hero.description}</h6>
                     <Button href={hero.buttonLink}>{hero.buttonTitle}</Button> 
-                </div>
+                </div> 
             </Container>  
         </Section> 
     ) 
