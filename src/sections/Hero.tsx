@@ -104,6 +104,6 @@ export default async function Hero() {
                     <Button href={hero.buttonLink}>{hero.buttonTitle}</Button> 
                 </div>
             </Container>  
-        </Section>
+        </Section> 
     )
 }   
